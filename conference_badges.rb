@@ -19,16 +19,4 @@ end
 def printer(attendees)
   batch_badge_creator(attendees).each {|attendee| puts attendee}
   assign_rooms(attendees).each {|attendee| puts attendee}
-end  
-
-=begin
-  number = attendees.size
-  count = 0
-  loop do
-    puts batch_badge_creator(attendees)[count]
-    puts assign_rooms(attendees)[count]
-    count += 1
-    #binding.pry
-    break if count == number
-  end
-=end
+end 
