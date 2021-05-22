@@ -6,11 +6,6 @@ end
 
 def batch_badge_creator(names)
   names.collect {|name| badge_maker(name)}
-  #ew_batch_badge = []
-  #names.each do |name| 
-    #new_batch_badge.push badge_maker(name)
-  #end
-  #new_batch_badge
 end
 =begin
 def assign_rooms(speakers)
