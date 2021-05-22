@@ -5,13 +5,14 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(names)
-  new_batch_badge = []
-  names.each do |name| 
-    new_batch_badge.push badge_maker(name)
-  end
-  new_batch_badge
+  names.collect {|name| badge_maker(name)}
+  #ew_batch_badge = []
+  #names.each do |name| 
+    #new_batch_badge.push badge_maker(name)
+  #end
+  #new_batch_badge
 end
-
+=begin
 def assign_rooms(speakers)
   room_badge = []
   speakers.each do |speaker|
@@ -32,3 +33,4 @@ def printer(attendees)
     break if count == number
   end
 end
+=end
