@@ -7,16 +7,17 @@ end
 def batch_badge_creator(names)
   names.collect {|name| badge_maker(name)}
 end
-=begin
+
 def assign_rooms(speakers)
   room_badge = []
+  
   speakers.each do |speaker|
     a = speakers.index("#{speaker}") + 1
     room_badge << "Hello, #{speaker}! You'll be assigned to room #{a}!"
   end
   room_badge
 end
-
+=begin
 def printer(attendees)
   number = attendees.size
   count = 0
