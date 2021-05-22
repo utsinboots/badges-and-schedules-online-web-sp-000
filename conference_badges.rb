@@ -17,6 +17,10 @@ def assign_rooms(speakers)
 end
 
 def printer(attendees)
+  batch_badge_creator(attendees).each {|
+  
+  
+  
   number = attendees.size
   count = 0
   loop do
