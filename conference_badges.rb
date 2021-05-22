@@ -15,7 +15,7 @@ def assign_rooms(speakers)
   end
   room_badge
 end
-=begin
+
 def printer(attendees)
   number = attendees.size
   count = 0
@@ -27,4 +27,3 @@ def printer(attendees)
     break if count == number
   end
 end
-=end
